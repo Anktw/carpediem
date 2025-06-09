@@ -48,7 +48,8 @@ export default function CarpeDiem() {
   }
 
   return (
-    <div className="flex items-center justify-center p-4">
+    <div>
+    <div className="flex min-h-screen items-center justify-center p-4">
       <Card className="w-full max-w-4xl">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">Carpe Diem</CardTitle>
@@ -144,6 +145,27 @@ export default function CarpeDiem() {
           )}
         </CardContent>
       </Card>
+    </div>
+    <footer className="w-full mt-8 flex flex-col items-center text-sm text-muted-foreground">
+       CarpeDiem.
+      <span className='flex items-center space-x-2'>
+        <a
+          href="https://unkit.site/projects/carpediem"
+          target="_blank"
+          className="underline hover:text-primary ml-1"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/anktw/carpediem"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-primary ml-1"
+        >
+          View on GitHub
+        </a>
+      </span>
+    </footer>
     </div>
   )
 }
