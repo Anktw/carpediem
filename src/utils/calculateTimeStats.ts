@@ -11,7 +11,7 @@ export function calculateTimeStats(dateOfBirth: Date, gender: 'male' | 'female')
   const lifeExpectancyInWeeks = Math.round(lifeExpectancy[gender] * 52)
   const remainingWeeks = Math.max(0, lifeExpectancyInWeeks - ageInWeeks)
   const spentWeeks = Math.min(lifeExpectancyInWeeks, ageInWeeks)
-  
+
   const sleepYears = (spentWeeks * (8 / 24)) / 52
 
   return {
